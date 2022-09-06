@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,8 @@
 </head>
 <body>
     <header>
-     <nav>
+        <div class="container main-nav">
+     <nav class="page-navigation">
         <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a> 
         <ul class="navigation">
             <li><a href="index.html">Студія</a></li>
@@ -24,16 +26,20 @@
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
      </ul>
+    </div>
     </header>
 
     <main>
+       
         <section class="promo">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
+        <h1>Ефективні рішення для <br> вашого бізнесу</h1>
         <button type="button" class="promo-button">Замовити послугу</button>
-        </section>
+    </section>
+   
 
 <!-- Benefits -->
         <section>
+            <div class="container">
            <h2 class="visually-hidden">Наші переваги</h2>
            <ul class="benefits-list">
             <li><h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -49,22 +55,26 @@
                 <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
            </ul>
+        </div>
         </section>
 
 <!-- Our services -->
-<section>
+<section class="our-services">
+    <div class="container">
     <h2 class="about-us">Чим ми займаємося</h2>
-    <ul>
+    <ul class="our-services-items">
         <li><img src="./images/service1.jpg" alt="Людина працює на планшеті" width="370"></li>
         <li><img src="./images/service2.jpg" alt="Дизайнер обирає колір на планшеті" width="370"></li>
         <li><img src="./images/service3.jpg" alt="Людина працює на комп'ютері" width="370"></li>
     </ul>
+</div>
 </section>
 
 <!-- Our Team -->
 <section class="team">
+    <div class="container">
     <h2 class="about-us">Наша команда</h2>
-    <ul>
+    <ul class="team-members">
         <li>
             <img src="./images/photo1.jpg" alt="Ігор Дем'яненко" width="270">
                 <h3>Ігор Дем'яненко</h3>
@@ -86,11 +96,13 @@
                 <p>UI Designer</p>
         </li>
     </ul>
+</div>
 </section>
 
     </main>
 
     <footer>
+        <div class="container">
         <a href="./index.html" class="logo">Web<span class="studio-footer">Studio</span></a>
         <address class="company">
             <ul>
@@ -102,6 +114,7 @@
                 <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
              </ul>
         </address>
+    </div>
 
     </footer>
     
