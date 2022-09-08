@@ -34,8 +34,16 @@ button {
 
 img {
   display: block;
+  max-width:100%;
+  height:auto;
 }
 
+header{
+    border-bottom:1px solid #ECECEC;
+    padding-top:32px;
+    padding-bottom:32px;
+    
+}
 .container
     {
         width: 1200px;
@@ -49,9 +57,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top:32px;
-    padding-bottom:32px;
-    
 }
 
 .page-navigation{
@@ -136,10 +141,19 @@ ul{
 
 .promo{
     background-color: var(--footer-color);
-    padding: 200px 450px 280px 450px;
-    
+    padding-top: 200px;
+    padding-bottom:280px;
+    }
+
+.promo-box{
+    display: flex;
+    align-items:center;
+    width: 700px;
+    flex-direction:column;
+    margin: auto;
 }
-.promo h1{
+
+.promo-hero{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -148,24 +162,27 @@ ul{
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom:30px;
+       
 }
+
 .promo-button{
-display: block;
-margin:0 auto;
-padding: 10px 32px;
-font-family:inherit;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.8;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--main-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-background: var(--accent-color);
-cursor:pointer;
-border-radius: 4px;
-border-color:transparent;
-}
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    font-family:inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: var(--accent-color);
+    cursor:pointer;
+    border-radius: 4px;
+    border-color:transparent;
+    }
 
 
 
@@ -174,14 +191,18 @@ font-size: 36px;
 line-height:1.2;
 text-align: center;
 color: var(--secondary-text-color);
+margin-bottom:50px;
 }
 
 /* Benefits */
 
-.benefits-list{
-    display: flex;
+.benefits{
     padding-bottom: 94px;
     padding-top: 94px;
+}
+
+.benefits-list{
+    display: flex;
     gap: 30px;
 }
 
@@ -198,22 +219,26 @@ color: var(--secondary-text-color);
       margin: -1px;
   }
 
-.benefits-list h3{
+.benefits-list-item{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+    margin-bottom:10px;
 }
 
+/* Our services */
+
+.our-services{
+    padding-bottom:94px;
+}
 .our-services-items{
     display: flex;
     gap:30px;
-    flex-wrap: wrap;
-    padding-bottom:94px;
-    margin-top: 50px;
+    flex-wrap: wrap; 
 
-    
 }
+
 /* Team */
 
 .team{
@@ -227,25 +252,28 @@ color: var(--secondary-text-color);
     display: flex;
     gap:30px;
     flex-wrap: wrap;
-    margin-top:50px;
 
 }
 
-.team h3{
+.team-members h3{
     font-weight: 500;
     font-size: 16px;
     color:var(--secondary-text-color);
     text-align: center;
-    margin-top:30px;
     margin-bottom:10px;
+}
 
-
+.team-members-card{
+    padding-top:30px;
+    padding-bottom:30px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team p{
     font-size: 16px;
     text-align: center;
-    margin bottom;
 }
 
 /* Footer */
@@ -257,7 +285,7 @@ footer{
 }
 
 .company{
-    margin-top:20px;
+    
 }
 .company a{
     font-size: 14px;
@@ -267,7 +295,8 @@ footer{
     font-style: normal;
     
 }
- .company li{
+ .company li:not(:last-child)
+ {
     margin-bottom:9px;
  }
 .company-address a{
@@ -280,6 +309,10 @@ color: var(--main-color);
 
 .company a:focus{
     color:  var(--accent-color);
+}
+
+.webstudio{
+    margin-bottom:20px;
 }
 
 
@@ -323,10 +356,12 @@ color: var(--main-color);
     flex-wrap: wrap;
     gap:30px;
 }
-.projects-list li{
+.project-list-card{
     border-bottom:1px solid #EEEEEE;
     border-left:1px solid #EEEEEE;
     border-right:1px solid #EEEEEE;
+    padding:20px 24px;
+    
 }
 .projects-list h2{
     font-size: 18px;
@@ -334,19 +369,12 @@ color: var(--main-color);
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
     margin-bottom:4px;
-    margin-top:20px;
-    margin-left:24px;
-    margin-left:24px;
-    margin-left:24px;
     
 }
 
 .projects-list p{
 font-size: 16px;
 line-height: 1.8;
-margin-bottom: 50px;
-margin-left:24px;
-margin-left:24px;
 }
 
 
