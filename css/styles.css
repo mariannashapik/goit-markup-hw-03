@@ -40,8 +40,8 @@ img {
 
 header{
     border-bottom:1px solid #ECECEC;
-    padding-top:32px;
-    padding-bottom:32px;
+    padding-top:24px;
+    padding-bottom:24px;
     
 }
 .container
@@ -148,9 +148,8 @@ ul{
 .promo-box{
     display: flex;
     align-items:center;
-    width: 700px;
     flex-direction:column;
-    margin: auto;
+    
 }
 
 .promo-hero{
@@ -162,6 +161,7 @@ ul{
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom:30px;
+    width:700px;
        
 }
 
